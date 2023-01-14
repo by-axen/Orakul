@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/* rhttps://github.com/by-axen/Orakul */
 
 main()
 {
@@ -11,6 +11,12 @@ main()
 	scanf("%i",&month);
 	printf("year=");
 	scanf("%i",&year);
+	
+	if(day>31||day<1||month>12||month<1||year>2023||year<1)
+	{
+		printf("Error");
+		return EXIT_FAILURE;
+	}
 	
 	if(year%4==0)
 	{
